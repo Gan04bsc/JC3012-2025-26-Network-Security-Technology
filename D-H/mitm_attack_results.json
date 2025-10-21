@@ -1,0 +1,45 @@
+{
+  "attack_timestamp": "2025-10-21T11:07:24.640985",
+  "parameters": {
+    "prime_modulus": 23,
+    "primitive_root": 5
+  },
+  "keys": {
+    "client_private": 8,
+    "client_public": 16,
+    "server_private": 12,
+    "server_public": 18,
+    "attacker_private": 11,
+    "attacker_public": 22
+  },
+  "shared_secrets": {
+    "client_computed": 1,
+    "server_computed": 1,
+    "attacker_with_client": 1,
+    "attacker_with_server": 1
+  },
+  "attack_analysis": {
+    "successful": false,
+    "details": {
+      "client_attacker_key_match": true,
+      "server_attacker_key_match": true,
+      "client_server_key_match": true,
+      "attacker_can_eavesdrop": true,
+      "secure_channel_broken": false
+    }
+  },
+  "intercepted_data": [
+    {
+      "type": "client_public_key",
+      "original": 16,
+      "forged": 22,
+      "timestamp": "2025-10-21T11:07:24.642981"
+    },
+    {
+      "type": "server_public_key",
+      "original": 18,
+      "forged": 22,
+      "timestamp": "2025-10-21T11:07:24.642981"
+    }
+  ]
+}
