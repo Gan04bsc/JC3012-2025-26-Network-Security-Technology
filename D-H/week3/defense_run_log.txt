@@ -1,0 +1,28 @@
+PS C:\Users\H\Desktop\week3> & C:/Users/H/AppData/Local/Programs/Python/Python314/python.exe c:/Users/H/Desktop/week3/dh_defense_demo.py
+============================================================
+开始演示：对 D-H (PSK+HMAC 防御) 的 MITM 攻击
+============================================================
+公开参数: p=23, g=5
+Alice和Bob的PSK: secure_pre_shared_key_for_auth_123!
+攻击者公钥: 21
+
+--- Alice ---
+Alice 生成公钥: 14
+Alice 生成MAC: 142ba13250...
+
+--- Attacker (拦截 Alice -> Bob) ---
+[Attacker] 拦截到来自 Client 的公钥: 14
+[Attacker] 拦截到来自 Client 的MAC: 142ba13250...
+[Attacker] 替换为自己的公钥: 21
+[Attacker] 转发一个无效的MAC: 142ba13250...
+
+--- Bob (接收) ---
+Bob 收到公钥: 21
+Bob 收到MAC: 142ba13250...
+Bob 验证MAC... 结果: False
+
+[系统日志] 错误: MITM ATTACK DETECTED! (Bob 验证 Alice 失败) 会话终止。
+
+*** MITM 攻击被成功检测和阻止 ***
+
+攻击结果已记录到: dh_defense_attack_results.json
