@@ -1,0 +1,23 @@
+{
+"timestamp": "2025-10-27T17:13:22.578152",
+"attack_on": "D-H with PSK-HMAC Defense",
+"parameters": {
+"p": 23,
+"g": 5
+},
+"keys": {
+"client_public": 14
+},
+"events": [
+{
+"type": "intercept_client_to_server",
+"original_pub": 14,
+"forged_pub": 21,
+"forged_mac_hex": "142ba132502dcb5242b6304de5cbc3d6a748128a42025b9272d780fd0e69a02a"
+}
+],
+"result": {
+"status": "Failed (Detected)",
+"reason": "MITM ATTACK DETECTED! (Bob \u9a8c\u8bc1 Alice \u5931\u8d25) \u4f1a\u8bdd\u7ec8\u6b62\u3002"
+}
+}
