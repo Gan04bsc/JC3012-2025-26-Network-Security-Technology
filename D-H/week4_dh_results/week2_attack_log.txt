@@ -1,0 +1,256 @@
+CORRECT MITM ATTACK DEMONSTRATION
+============================================================
+
+DH Parameters:
+  p = 23
+  g = 5
+
+Key Generation:
+  Client: private=19, public=7
+  Server: private=3, public=10
+  Attacker: private=12, public=18
+
+MITM Attack Execution:
+  Attacker intercepts client public key 7
+  Attacker sends forged public key 18 to server
+  Attacker intercepts server public key 10
+  Attacker sends forged public key 18 to client
+
+Shared Secret Computation:
+  Client computes: g^19 mod p = 16
+  Server computes: g^3 mod p = 13
+  Attacker with client: g^12 mod p = 16
+  Attacker with server: g^12 mod p = 13
+
+Security Analysis:
+  Client-Attacker shared secret match: True
+  Server-Attacker shared secret match: True
+  Client-Server shared secret match: False
+
+*** MITM ATTACK SUCCESSFUL ***
+  - Attacker established shared secrets with both parties
+  - Client and server have different shared secrets
+  - Attacker can decrypt all communication
+Attack results saved to mitm_attack_results.json
+
+============================================================
+ATTACK RESULTS SUMMARY
+============================================================
+
+Parameters:
+  Prime modulus p: 23
+  Primitive root g: 5
+
+Public Keys:
+  Client: 7
+  Server: 10
+  Attacker: 18
+
+Shared Secrets:
+  Client computed: 16
+  Server computed: 13
+  Attacker-Client: 16
+  Attacker-Server: 13
+
+Attack Analysis:
+  Successful: YES
+  Impact: Attacker can decrypt both sides of communication
+  Security: Client-server direct communication compromised
+
+======================================================================
+Press Enter to run multiple trials for statistical analysis...
+
+============================================================
+RUNNING 3 ATTACK TRIALS FOR STATISTICS
+============================================================
+
+Trial 1:
+============================================================
+CORRECT MITM ATTACK DEMONSTRATION
+============================================================
+
+DH Parameters:
+  p = 23
+  g = 5
+
+Key Generation:
+  Client: private=15, public=19
+  Server: private=10, public=9
+  Attacker: private=21, public=14
+
+MITM Attack Execution:
+  Attacker intercepts client public key 19
+  Attacker sends forged public key 14 to server
+  Attacker intercepts server public key 9
+  Attacker sends forged public key 14 to client
+
+Shared Secret Computation:
+  Client computes: g^15 mod p = 17
+  Server computes: g^10 mod p = 18
+  Attacker with client: g^21 mod p = 17
+  Attacker with server: g^21 mod p = 18
+
+Security Analysis:
+  Client-Attacker shared secret match: True
+  Server-Attacker shared secret match: True
+  Client-Server shared secret match: False
+
+*** MITM ATTACK SUCCESSFUL ***
+  - Attacker established shared secrets with both parties
+  - Client and server have different shared secrets
+  - Attacker can decrypt all communication
+Attack results saved to mitm_attack_results.json
+
+============================================================
+ATTACK RESULTS SUMMARY
+============================================================
+
+Parameters:
+  Prime modulus p: 23
+  Primitive root g: 5
+
+Public Keys:
+  Client: 19
+  Server: 9
+  Attacker: 14
+
+Shared Secrets:
+  Client computed: 17
+  Server computed: 18
+  Attacker-Client: 17
+  Attacker-Server: 18
+
+Attack Analysis:
+  Successful: YES
+  Impact: Attacker can decrypt both sides of communication
+  Security: Client-server direct communication compromised
+
+Trial 2:
+============================================================
+CORRECT MITM ATTACK DEMONSTRATION
+============================================================
+
+DH Parameters:
+  p = 23
+  g = 5
+
+Key Generation:
+  Client: private=19, public=7
+  Server: private=12, public=18
+  Attacker: private=18, public=6
+
+MITM Attack Execution:
+  Attacker intercepts client public key 7
+  Attacker sends forged public key 6 to server
+  Attacker intercepts server public key 18
+  Attacker sends forged public key 6 to client
+
+Shared Secret Computation:
+  Client computes: g^19 mod p = 18
+  Server computes: g^12 mod p = 6
+  Attacker with client: g^18 mod p = 18
+  Attacker with server: g^18 mod p = 6
+
+Security Analysis:
+  Client-Attacker shared secret match: True
+  Server-Attacker shared secret match: True
+  Client-Server shared secret match: False
+
+*** MITM ATTACK SUCCESSFUL ***
+  - Attacker established shared secrets with both parties
+  - Client and server have different shared secrets
+  - Attacker can decrypt all communication
+Attack results saved to mitm_attack_results.json
+
+============================================================
+ATTACK RESULTS SUMMARY
+============================================================
+
+Parameters:
+  Prime modulus p: 23
+  Primitive root g: 5
+
+Public Keys:
+  Client: 7
+  Server: 18
+  Attacker: 6
+
+Shared Secrets:
+  Client computed: 18
+  Server computed: 6
+  Attacker-Client: 18
+  Attacker-Server: 6
+
+Attack Analysis:
+  Successful: YES
+  Impact: Attacker can decrypt both sides of communication
+  Security: Client-server direct communication compromised
+
+Trial 3:
+============================================================
+CORRECT MITM ATTACK DEMONSTRATION
+============================================================
+
+DH Parameters:
+  p = 23
+  g = 5
+
+Key Generation:
+  Client: private=11, public=22
+  Server: private=19, public=7
+  Attacker: private=16, public=3
+
+MITM Attack Execution:
+  Attacker intercepts client public key 22
+  Attacker sends forged public key 3 to server
+  Attacker intercepts server public key 7
+  Attacker sends forged public key 3 to client
+
+Shared Secret Computation:
+  Client computes: g^11 mod p = 1
+  Server computes: g^19 mod p = 6
+  Attacker with client: g^16 mod p = 1
+  Attacker with server: g^16 mod p = 6
+
+Security Analysis:
+  Client-Attacker shared secret match: True
+  Server-Attacker shared secret match: True
+  Client-Server shared secret match: False
+
+*** MITM ATTACK SUCCESSFUL ***
+  - Attacker established shared secrets with both parties
+  - Client and server have different shared secrets
+  - Attacker can decrypt all communication
+Attack results saved to mitm_attack_results.json
+
+============================================================
+ATTACK RESULTS SUMMARY
+============================================================
+
+Parameters:
+  Prime modulus p: 23
+  Primitive root g: 5
+
+Public Keys:
+  Client: 22
+  Server: 7
+  Attacker: 3
+
+Shared Secrets:
+  Client computed: 1
+  Server computed: 6
+  Attacker-Client: 1
+  Attacker-Server: 6
+
+Attack Analysis:
+  Successful: YES
+  Impact: Attacker can decrypt both sides of communication
+  Security: Client-server direct communication compromised
+
+============================================================
+ATTACK TRIALS SUMMARY
+============================================================
+Total trials: 3
+Successful attacks: 3
+Success rate: 100.0%
+Vulnerability confirmed: YES
