@@ -1,0 +1,244 @@
+{
+  "metadata": {
+    "timestamp": "2025-11-03 16:29:28",
+    "version": "1.0"
+  },
+  "raw_data": {
+    "overhead_512": {
+      "bits": 512,
+      "trials": 3,
+      "baseline_avg_seconds": 0.0126,
+      "safe_prime_avg_seconds": 1.6196,
+      "strong_prime_avg_seconds": "N/A",
+      "overhead_safe_prime_percent": 12714.78,
+      "overhead_strong_prime_percent": "N/A",
+      "speedup_ratio_safe": 128.15,
+      "speedup_ratio_strong": "N/A"
+    },
+    "512_baseline": {
+      "asr": {
+        "bits": 512,
+        "mode": "baseline",
+        "trials": 10,
+        "success_count": 0,
+        "failure_count": 10,
+        "asr_percent": 0.0,
+        "max_steps": 200000,
+        "max_tries": 30,
+        "details": [
+          {
+            "success": false,
+            "iterations": 6000000,
+            "n_bits": 512,
+            "p_bits": 256,
+            "q_bits": 256
+          },
+          {
+            "success": false,
+            "iterations": 6000000,
+            "n_bits": 512,
+            "p_bits": 256,
+            "q_bits": 256
+          },
+          {
+            "success": false,
+            "iterations": 6000000,
+            "n_bits": 512,
+            "p_bits": 256,
+            "q_bits": 256
+          },
+          {
+            "success": false,
+            "iterations": 6000000,
+            "n_bits": 512,
+            "p_bits": 256,
+            "q_bits": 256
+          },
+          {
+            "success": false,
+            "iterations": 6000000,
+            "n_bits": 512,
+            "p_bits": 256,
+            "q_bits": 256
+          },
+          {
+            "success": false,
+            "iterations": 6000000,
+            "n_bits": 511,
+            "p_bits": 256,
+            "q_bits": 256
+          },
+          {
+            "success": false,
+            "iterations": 6000000,
+            "n_bits": 512,
+            "p_bits": 256,
+            "q_bits": 256
+          },
+          {
+            "success": false,
+            "iterations": 6000000,
+            "n_bits": 511,
+            "p_bits": 256,
+            "q_bits": 256
+          },
+          {
+            "success": false,
+            "iterations": 6000000,
+            "n_bits": 511,
+            "p_bits": 256,
+            "q_bits": 256
+          },
+          {
+            "success": false,
+            "iterations": 6000000,
+            "n_bits": 512,
+            "p_bits": 256,
+            "q_bits": 256
+          }
+        ]
+      },
+      "ttc": {
+        "bits": 512,
+        "mode": "baseline",
+        "trials": 5,
+        "success_count": 0,
+        "ttc_avg_seconds": null,
+        "ttc_median_seconds": null,
+        "ttc_std_seconds": null,
+        "ttc_min_seconds": null,
+        "ttc_max_seconds": null
+      },
+      "keygen": {
+        "bits": 512,
+        "mode": "baseline",
+        "trials": 5,
+        "generation_success_count": 5,
+        "validation_success_count": 0,
+        "encryption_success_count": 5,
+        "generation_rate_percent": 100.0,
+        "validation_rate_percent": 0.0,
+        "encryption_rate_percent": 100.0
+      },
+      "derived": {
+        "attack_efficiency": 0,
+        "security_margin_percent": 100.0,
+        "cost_benefit_ratio": "inf"
+      }
+    },
+    "512_safe_prime": {
+      "asr": {
+        "bits": 512,
+        "mode": "safe_prime",
+        "trials": 10,
+        "success_count": 0,
+        "failure_count": 10,
+        "asr_percent": 0.0,
+        "max_steps": 200000,
+        "max_tries": 30,
+        "details": [
+          {
+            "success": false,
+            "iterations": 6000000,
+            "n_bits": 512,
+            "p_bits": 256,
+            "q_bits": 256
+          },
+          {
+            "success": false,
+            "iterations": 6000000,
+            "n_bits": 511,
+            "p_bits": 256,
+            "q_bits": 256
+          },
+          {
+            "success": false,
+            "iterations": 6000000,
+            "n_bits": 512,
+            "p_bits": 256,
+            "q_bits": 256
+          },
+          {
+            "success": false,
+            "iterations": 6000000,
+            "n_bits": 512,
+            "p_bits": 256,
+            "q_bits": 256
+          },
+          {
+            "success": false,
+            "iterations": 6000000,
+            "n_bits": 511,
+            "p_bits": 256,
+            "q_bits": 256
+          },
+          {
+            "success": false,
+            "iterations": 6000000,
+            "n_bits": 512,
+            "p_bits": 256,
+            "q_bits": 256
+          },
+          {
+            "success": false,
+            "iterations": 6000000,
+            "n_bits": 512,
+            "p_bits": 256,
+            "q_bits": 256
+          },
+          {
+            "success": false,
+            "iterations": 6000000,
+            "n_bits": 512,
+            "p_bits": 256,
+            "q_bits": 256
+          },
+          {
+            "success": false,
+            "iterations": 6000000,
+            "n_bits": 512,
+            "p_bits": 256,
+            "q_bits": 256
+          },
+          {
+            "success": false,
+            "iterations": 6000000,
+            "n_bits": 512,
+            "p_bits": 256,
+            "q_bits": 256
+          }
+        ]
+      },
+      "ttc": {
+        "bits": 512,
+        "mode": "safe_prime",
+        "trials": 5,
+        "success_count": 0,
+        "ttc_avg_seconds": null,
+        "ttc_median_seconds": null,
+        "ttc_std_seconds": null,
+        "ttc_min_seconds": null,
+        "ttc_max_seconds": null
+      },
+      "keygen": {
+        "bits": 512,
+        "mode": "safe_prime",
+        "trials": 5,
+        "generation_success_count": 5,
+        "validation_success_count": 0,
+        "encryption_success_count": 5,
+        "generation_rate_percent": 100.0,
+        "validation_rate_percent": 0.0,
+        "encryption_rate_percent": 100.0
+      },
+      "derived": {
+        "attack_efficiency": 0,
+        "security_margin_percent": 100.0,
+        "cost_benefit_ratio": 0.0079
+      }
+    }
+  },
+  "summary": {
+    "text": "\n============================================================\n测试摘要\n============================================================\n\n[512_baseline]\n  ASR: 0.00%\n  Security Margin: 100.00%\n  Key Gen Success: 100.00%\n\n[512_safe_prime]\n  ASR: 0.00%\n  Security Margin: 100.00%\n  Key Gen Success: 100.00%"
+  }
+}
